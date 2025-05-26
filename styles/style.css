@@ -1,0 +1,29 @@
+
+:root{
+    --color-principal: #59ea8a;
+    --color-secundario: white;
+    --color-fondo: #051e30 ;
+    --color-terciario: #39396a;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+
+}
+.menu{
+    list-style-type: none;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+}
