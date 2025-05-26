@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --color-principal: #59ea8a;
@@ -12,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  "Jost", sans-serif;
 }
 
 body{
@@ -19,6 +21,17 @@ body{
     color: var(--color-secundario);
 
 }
+
+a{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--color-terciario);
+    text-transform: uppercase;
+}
+
 .menu{
     list-style-type: none;
 }
