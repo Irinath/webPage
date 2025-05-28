@@ -21,13 +21,13 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+:root {
     --text: #613e05;
     --background: #d1e9fa;
     --primary: #a5b9cf;
     --secondary: #020024;
     --accent: #9595c6;
-  }
+}
 }
 
 *{
@@ -67,4 +67,10 @@ a:hover{
 .contenedor-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.footer{
+    background-color: var(--color-text);
+    color: var(--color-fondo);
+    padding: 5%;
 }
