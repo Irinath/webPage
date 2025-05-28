@@ -1,29 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root{
-    --color-principal: #59ea8a;
-    --color-secundario: white;
+    --color-principal: #304459;
+    --color-secundario: #dedcff;
     --color-fondo: #051e30 ;
     --color-terciario: #39396a;
-
+    --color-text: #fad7a0;
+    
 }
 
+@media (prefers-color-scheme: dark) {
+:root{
+    --background: #051e30;
+--primary: #304459;
+--secondary: #dedcff;
+--accent: #39396a;
+--text: #fad7a0;
+}
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+    --text: #613e05;
+    --background: #d1e9fa;
+    --primary: #a5b9cf;
+    --secondary: #020024;
+    --accent: #9595c6;
+}
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  "Jost", sans-serif;
 }
 
 body{
     background-color: var(--color-fondo);
-    color: var(--color-secundario);
+    color: var(--color-text);
 
 }
+
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+
 .menu{
     list-style-type: none;
+}
+
+.contacto{
+    text-align: center;
+    border: 2px solid;
+    background-color: var(--color-principal);
+    border-radius: 15px;
 }
 
 .contenedor-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.footer{
+    background-color: var(--color-text);
+    color: var(--color-fondo);
+    padding: 5%;
 }
