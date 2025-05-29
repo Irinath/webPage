@@ -43,9 +43,9 @@ body{
 
 }
 
-header{
+.mi-clase{
     padding: 2%;
-    align-content: center;
+    align-items: center;
     background-image: linear-gradient(to bottom left, var(--color-text) , var(--color-fondo) 60%);
 
 }
@@ -69,6 +69,8 @@ a:hover{
     border: 2px solid;
     background-color: var(--color-principal);
     border-radius: 15px;
+    padding: 5%;
+    width: 80%;
 }
 
 .contenedor-flex {
@@ -82,4 +84,23 @@ a:hover{
     border-radius: 15px;
     padding: 2%;
     text-align: center;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: var(--color-secundario);
+        color: var(--color-fondo);
+    }
+    /*.mi-clase {
+        background-color: var(--color-secundario);
+        color: var(--color-fondo);
+        padding: 2%;
+    }*/
+    .contenedor-flex {
+        background-image: url(../images/learn-code.png);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
 }
