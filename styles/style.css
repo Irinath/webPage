@@ -70,7 +70,7 @@ a:hover{
     background-color: var(--color-principal);
     border-radius: 15px;
     padding: 5%;
-    width: 80%;
+    width: 100%;
 }
 
 .contenedor-flex {
@@ -84,23 +84,35 @@ a:hover{
     border-radius: 15px;
     padding: 2%;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     body {
         background-color: var(--color-secundario);
         color: var(--color-fondo);
     }
-    /*.mi-clase {
+
+    .mi-clase {
         background-color: var(--color-secundario);
+        background-image: none;
         color: var(--color-fondo);
         padding: 2%;
-    }*/
+        align-items: center;
+    }
+
     .contenedor-flex {
         background-image: url(../images/learn-code.png);
         background-position: center;
         background-size: cover;
         height: 100%;
+    }
+
+    a{
+        color: var(--color-fondo);
+    }
+
+    .contacto{
+        color: var(--color-text);
     }
 }
