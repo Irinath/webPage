@@ -43,6 +43,13 @@ body{
 
 }
 
+header{
+    padding: 2%;
+    align-content: center;
+    background-image: linear-gradient(to bottom left, var(--color-text) , var(--color-fondo) 60%);
+
+}
+
 a{
     color: var(--color-text);
     text-decoration: none;
@@ -66,11 +73,13 @@ a:hover{
 
 .contenedor-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly ;
 }
 
 .footer{
-    background-color: var(--color-text);
-    color: var(--color-fondo);
-    padding: 5%;
+    border: 2px solid;
+    /*background-color: var(--color-principal);*/
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
 }
